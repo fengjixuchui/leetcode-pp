@@ -48,20 +48,31 @@ export const asyncRouterMap = [
           import(/* webpackChunkName: "view-video" */ '@/views/Video.vue')
       },
       {
-        path: '91',
+        path: '91-intro',
         component: () =>
-          import(/* webpackChunkName: "view-91" */ '@/views/91.vue')
+          import(/* webpackChunkName: "view-91" */ '@/views/91/91.vue')
+      },
+      {
+        path: '91',
+        name: '91',
+        component: () =>
+          import(/* webpackChunkName: "view-91algo" */ '@/views/91/91algo.vue')
+      },
+      {
+        path: 'github',
+        component: () =>
+          import(/* webpackChunkName: "view-91algo" */ '@/views/Markdown.vue')
       },
       {
         path: 'book',
         component: () =>
-          import(/* webpackChunkName: "view-book" */ '@/views/Book.vue')
-      },
-      {
-        path: 'book-code',
-        component: () =>
           import(/* webpackChunkName: "view-book" */ '@/views/BookCode.vue')
       },
+      // {
+      //   path: 'book-code',
+      //   component: () =>
+      //     import(/* webpackChunkName: "view-book" */ '@/views/BookCode.vue')
+      // },
       {
         path: 'solution-code',
         component: () =>
